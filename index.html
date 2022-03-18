@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table code</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>SOP 1 By Sanaullah</title>
+    <style>
+        p{
+            line-height: 30px;
+        }
+        .Output{
+            font-size: 18px;
+            font-weight: 600;
+            color: #265df2;
+        }
+        .div{
+            border: 2px solid black;
+            background-color: green;
+            color: red;
+        }
+        iframe{
+            height: 210px;
+            width: 480px;
+            border: none;
+        }
+        .div{
+            text-align: center;
+        }
+        .text-boxes{
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            display: flex;
+            padding: 0 30px;
+        }
+        .text-boxes .text-box{
+            height: 380px;
+            max-width: 660px;
+            width: 100%;
+            margin: 55px 0;
+        }
+        .text-boxes .text-box .topic{
+            font-size: 18px;
+            font-weight: 600;
+            color: #265df2;
+            margin: 4px;
+        }
+        .text-boxes .text-box textarea{
+            height: 100%;
+            width: 100%;
+            padding: 30px;
+            font-size: 15px;
+            font-weight: 400;
+            outline: none;
+            border: 1px solid #265df2;
+            border-radius: 8px;
+            background: #cad5f3;
+        }
+        .text-box textarea::-webkit-scrollbar{
+            display: none;
+        }
+        .text-boxes .text-box button{
+            height: 45px;
+            width: 155px;
+            color: #fff;
+            background: #265df2;
+            outline: none;
+            border: none;
+            border-radius: 8px;
+            font-size: 17px;
+            font-weight: 400px;
+            cursor: pointer;
+            margin: 8px 0;
+            transition: all 0.4s ease;
+         }
+         a{
+             text-decoration: none;
+             color: white;
+         }
+    </style>
+</head>
+<body>
+    <div class="text-boxes">
+        <div class="text-box">
+            <div class="topic">Code:</div>
+            <textarea id="HTMLBox" readonly>
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Div-A</title>
+                </head>
+                <body>
+                    <table border="1">
+                        <tr>
+                            <th>Number of Students</th>
+                            <th>Boys</th>
+                            <th>Girls</th>
+                        </tr>
+                        <tr>
+                            <th>100</th>
+                            <th>50</th>
+                            <th>50</th>
+                        </tr>
+                    </table>
+            </textarea><br>
+            <button id="HTMLButton">Copy Code</button>
+            <button class="btn" style="width: 17%"><a href="Sop 4.html"><i class="fa">&#xf053</i> Back</a></button>
+            
+        </div>
+    </div>
+
+    <script>
+
+        let HTMLBox = document.getElementById("HTMLBox");
+        let HTMLButton = document.getElementById("HTMLButton");
+
+        HTMLButton.onclick = function(){
+            HTMLBox.select();
+            document.execCommand("copy");
+            HTMLButton.innerText = "Codes Copied"
+        }
+    </script>
+
+</body>
+</html>
+</body>
+</html>
